@@ -5,12 +5,15 @@
   "scripts": {
     "server": "nodemon backend/server.js"
   },
-  "type":"module",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "we-ping": "file:"
   }
 }
