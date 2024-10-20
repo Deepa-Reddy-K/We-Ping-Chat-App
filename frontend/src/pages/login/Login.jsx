@@ -14,13 +14,13 @@ const Login = () => {
 	};
 
 	return (
-		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
-      {/* Frosted Glass Effect Container */}
-      <div className='w-full p-6 bg-pink-400 rounded-lg shadow-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-500'>
-        <h1 className='text-3xl font-semibold text-center text-white mb-4 font-fun'>
-          Login to 
-          <span className='text-yellow-500'> We-Ping </span>
-        </h1>
+		<div className='flex flex-col items-center justify-center min-h-screen p-4'>
+			{/* Frosted Glass Effect Container */}
+			<div className='w-full max-w-md p-6 bg-pink-400 rounded-lg shadow-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-500'>
+				<h1 className='text-3xl font-semibold text-center text-white mb-4'>
+					Login to 
+					<span className='text-yellow-600'> We-Ping </span>
+				</h1>
 
 				<form onSubmit={handleSubmit}>
 					<div>
@@ -29,7 +29,7 @@ const Login = () => {
 						</label>
 						<input
 							type='text'
-							placeholder='Enter username'
+							placeholder='Enter your Username'
 							className='w-full input input-bordered h-10'
 							value={username}
 							onChange={(e) => setUsername(e.target.value)}
@@ -42,18 +42,19 @@ const Login = () => {
 						</label>
 						<input
 							type='password'
-							placeholder='Enter Password'
+							placeholder='Enter your Password'
 							className='w-full input input-bordered h-10'
 							value={password}
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</div>
-					<Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
+
+					<Link to='/signup' className='text-sm text-center block mt-2 hover:underline hover:text-yellow-600'>
 						{"Don't"} have an account?
 					</Link>
 
-					<div>
-						<button className='btn btn-block btn-sm mt-2' disabled={loading}>
+					<div className='mt-4'>
+						<button className='btn btn-block btn-sm border border-slate-700 bg-yellow-500 hover:bg-yellow-600 text-slate-700' disabled={loading}>
 							{loading ? <span className='loading loading-spinner '></span> : "Login"}
 						</button>
 					</div>

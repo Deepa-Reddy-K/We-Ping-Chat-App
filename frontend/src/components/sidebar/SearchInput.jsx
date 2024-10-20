@@ -32,7 +32,7 @@ const SearchInput = () => {
 				value={search}
 				onChange={(e) => setSearch(e.target.value)}
 			/>
-			<button type='submit' className='btn btn-circle bg-purple-600 text-white'>
+			<button type='submit' className='btn btn-circle bg-yellow-700 text-white'>
 				<TbUserSearch className='w-6 h-6 outline-none' />
 			</button>
 		</form>
